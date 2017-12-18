@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<style>
+		#container{
+			height:550px;
+			width:100%;
+			background:white;
+			}
+		#left{
+			height:100%;
+			width:50%;
+			float:left;
+			background: white;
+			}
+			#right{
+			padding-top:10px:
+			height:100%;
+			width:50%;
+			float:right;
+			background: white;
+			}
+		#googleMap{
+			
+			height:450px;
+			width:90%; 		
+			align:center;
+			}
+		#header{
+			background:url(b1.jpg);
+			background-repeat:no-repeat;
+			background-position:center center;
+			-webkit-background-size:cover;
+			background-size:cover;
+			
+			height:150px;
+			width:100%;
+			}
+			#ch{
+			background-color:white;
+			height:30px;
+			width:100%;
+			}
+		#logotxt{
+				width:15%;
+				height:100%;
+				float:left;
+				background:url(b5.jpg);
+				background-repeat:no-repeat;
+				background-position:center center;
+				-webkit-background-size:cover;
+				background-size:cover;
+				padding-top:0px;
+				padding-bottom:0px;
+				padding-left:0px;
+				padding-right:0px;
+				box-sizing: border-box;
+			    }
+		#logo{
+			background:url(b5.jpg);
+			background-repeat:no-repeat;
+			background-position:center center;
+			-webkit-background-size:cover;
+			background-size:cover;
+			width:85%;
+			height:100%;
+			float:right;
+			}
+	</style>
+</head>
+<body>
+<div id="header">
+ <div id="logotxt"><br> &nbsp&nbsp
+ <img src="logo2.jpg"  id="imglogo">
+ </div>
+ <div id="logo">
+	 <h1 style="color:#0000ff; text-align:center; size=15px">POLLUTION CONTROL BOARD</h1>
+	
+ </div></div>
+ <div id="ch"></div>
+
+<div id="container">
+	<div id="left">
+	<!--contents here-->
+	</div>
+<div id="right">	<div id="googleMap"></div></div>
+ </div>
+
+
+<script>
+function myMap() {
+var mapProp= {
+    center:new google.maps.LatLng(13.082680,80.270718),
+    zoom:12,
+};
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMGkYOyzDI40LWTe02wTZFAw7lJSOE10U&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>
